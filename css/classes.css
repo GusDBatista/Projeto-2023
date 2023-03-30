@@ -1,0 +1,28 @@
+.page__header {
+    padding: 0 15px 1px;
+    box-shadow: 0 1px 4px #00000079;
+    color: #bbb;
+    background: #333;
+    min-height: 0;
+}
+.page__title {
+    color: #d0d0d0;
+    margin-right: 10px;
+    display: inline;
+}
+.page__subtitle {
+    display: inline;
+    font-style: italic;
+    color: #d0d0d0;
+}
+.container {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page__nav {
+    position: relative;
+    min-height: 33px;
+}
