@@ -1,13 +1,31 @@
-
-* {
-    box-sizing: border-box;
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
 }
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 3000px){
+    .container{
+        width: 80%;
+    }
+}
+
+
 body {
-    font-family: Arial,sans-serif;
+   font-family: Arial,sans-serif;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 20px;
     color: #bbb;
-    background: #222;
+    background: #1c1c1c;
 }
 .interface {
     position: absolute;
@@ -17,6 +35,8 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 div {
     display: block;
@@ -25,9 +45,8 @@ p {
     margin: 0 0 10px;
 }
 h1 {
-    font-family: inherit;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 40px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 36px;
@@ -56,23 +75,26 @@ h1 {
     padding: 5px 14px 6px;
     color: #bbb;
     background-color: #222;
-    border: 1px solid #555555a0;
+    border: 1px solid #555;
     border-top: 0;
 }
 a {
-    text-decoration: none;
-    
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    text-decoration: none;   
 }
 ol, ul {
     margin-top: 0;
     margin-bottom: 10px;
+}
+button{
+    background-color: #222;
+    color: #bbb;
+    margin: 0;
+    border: 1px solid #555;
+    padding: 6px 12px;
+}
+input{
+    background-color: #222;
+    color: #bbb;
+    border: 1px solid #555;
+    padding: 6px 12px;
 }
