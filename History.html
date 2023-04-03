@@ -1,55 +1,96 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-bs-theme="escuro">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-------CSS Bootstrap------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <!---------CSS--------->
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/classes.css">
-        <title>Scarred Planes</title>        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-----JS bootstrap------>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        <title>History</title>        
         <!--Linguagem e guia-->
     </head>
     <body>
-        <div class="interface">
-            <header class="page_header">
-                <div class="container">         
-                    <h1 class="page_title">History</h1>
-                    <p class="page_subtitle">The events through the ages</p>
+    
+        <header class="page_header">
+            <div class="container">
+                <h1 class="page_title">History</h1>
+                <p class="page_subtitle">The heppenigs through the ages</p>
+            </div>
+        </header>
+            
+        <nav class="container navbar page_nav">
+            <ul class="nav nav-pills page_nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a>Psionics</a></li>
+                <li><a>Itens</a></li>
+                <li><a>Classes</a></li>
+                <li><a>Rules</a></li>
+                <li><a>Scars</a></li>
+                <div class="">
+                    <input type="search" spellcheck="false" title="Search into all site">
+                    <div class="border-start">
+                        <button type="button" class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg>
+                        </button>
+                    </div>
                 </div>
-            </header>
+            </ul>            
+        </nav>
 
-            <nav class="container page_nav">
-                <ul class="nav">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="History.html">History</a></li>
-                    <li><a>Psionics</a></li>
-                    <li><a>Itens</a></li>
-                    <li><a>Classes</a></li>
-                    <li><a>Rules</a></li>
-                    <li><a>Scars</a></li>
-                    <li><input class="Buscador" type="search" spellcheck="false" title="Search into all site"></li>
-                </ul>
-            </nav>
-            <div class="view-wrapper container">
-                <div class="view">
-                    <div class="Barra_de_filtro">
-                        <button>Search</button>
-                        <div class="Buscador"><input type="search" spellcheck="false" title="Type the planar year you want to know"></div>
-                        <button>Reset</button>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-7 view-col">
+                    <div class="first_row">
+                        <div>
+                            <button type="button" class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <input type="search" spellcheck="false" title="Search the year you whant">
+                        <div>
+                            <button type="button" class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div>"conteudo"</div>
-                    <div>"conteudo"</div>
-                    <div>"conteudo"</div>
-                </div>
-                <div class="view">
-                    <div class="Table-wraper">
-                        <table class="Content">
-                            <tr>
-                                <th>asda</th>
-                            </tr>
-                        </table>
-                    </div>
+                    <table calss="anos">
+                        <tr>
+                            <td>Year ###</td>
+                        </tr>
+                        <tr>
+                            <td>Year###</td>
+                        </tr>
+                    </table>
+                </div>    
+                <div class="col-5 view-col">
+                    <table>
+                        <tr>
+                            <th>
+                                <h1>Year###</h1>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                What happend on the Year###
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
+        
+        <script src="js/scripts.js"></script>
     </body>
 </html>

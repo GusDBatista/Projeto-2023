@@ -1,3 +1,5 @@
+/*-----------------Relative to page header------------*/
+
 .page_header {
     padding: 0 15px 1px;
     box-shadow: 0 1px 4px #00000079;
@@ -6,15 +8,71 @@
     min-height: 0;
     flex-shrink: 0;
 }
+
 .page_title {
     color: #d0d0d0;
     margin-right: 10px;
     display: inline;
 }
+
 .page_subtitle {
     display: inline;
     font-style: italic;
     color: #d0d0d0;
+}
+
+/*----------------Related to nevigation bar--------------------*/
+
+.page_nav {
+    position: relative;
+    min-height: 33px;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+}
+.nav>*:not(:first-child) {
+    margin-left: 2px;
+}
+.nav>*{
+    color: #bbb;
+    background-color: #222;
+    border: 1px solid #555;
+    position: relative;
+    display: flex;
+    float: left;
+    border-top: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.nav>li>a{
+    position: relative;
+    display: block;
+    padding: 5px 14px 6px;
+    color: #bbb;
+    background-color: #222;
+    border: 1px solid #555;
+    border-top: 0;
+}
+.nav>*>input{
+    flex-grow: 1;
+    padding: 5px 14px 6px;
+}
+
+/*--------------------general config--------------------*/
+
+.interface {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 .container {
     position: relative;
@@ -23,16 +81,6 @@
     margin-right: auto;
     margin-left: auto;
 }
-.page_nav {
-    position: relative;
-    min-height: 33px;
-}
-.view{
-    position: relative;
-    margin: 7px 7px 12px;
-    display: flex;
-    flex-direction: column;
-}
 .view-wrapper {
     display: flex;
     flex-direction: row;
@@ -40,28 +88,44 @@
     height: 100%;
     min-height: 0;
 }
-.Barra_de_filtro{
+.view{
+    position: relative;
+    margin: 7px 7px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------Filter bar to lists-----------------*/
+
+.barra_de_filtro{
     display: flex;
     flex-shrink: 0;
     font-size: 14px;
 }
-.Barra_de_filtro>*:first-child {
+.barra_de_filtro>*:first-child {
     border-radius: 0;
     border-top-left-radius: 4px;
     border-right: 0;
 }
-.Barra_de_filtro>*:not(:first-child):not(:last-child) {
+.barra_de_filtro>*:not(:first-child):not(:last-child) {
     border-radius: 0;
     border-right: 0;
 }
-.Barra_de_filtro>*:last-child{
+.barra_de_filtro>*:last-child{
     border-radius: 0;
     border-top-right-radius: 4px;
 }
-.Barra_de_filtro>*{
+.barra_de_filtro>*{
+    background-color: #222;
+    color: #bbb;
+    margin: 0;
+    border: 1px solid #555;
     padding: 6px 12px;
 }
-.Buscador{
+
+/*--------------Search----------*/
+
+.buscador{
     position: relative;
     background-color: #222;
     color: #bbb;
@@ -69,15 +133,19 @@
     width: 100%;
     padding: 0;
 }
-.Buscador>input{
+.buscador>input{
     width: inherit;
     height: auto;
+    border: 0;
 }
-.Table-wraper{
+
+/*---------------table config----------*/
+
+.table-wraper{
     border-top: 1px solid #555;
     border-bottom: 1px solid #555;
     background-color: #222;
 }
-table.Content{
+table.content{
     width: 100%;
 }
